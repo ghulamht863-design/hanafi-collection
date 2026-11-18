@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Gallery & Exhibition | HANAFI COLLECTIONS</title>
+  <meta name="description" content="View the full visual exhibition of Islamic calligraphy, sacred shrines, and luxury wall frames by HANAFI COLLECTIONS." />
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlack: '#090909',
+            brandGold: '#C6A15B',
+            brandIvory: '#F5F0E6',
+            brandBrown: '#78614A',
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'Georgia', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+            arabic: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/luxury-theme.css" />
+</head>
+<body class="bg-[#090909] text-[#F5F0E6] font-sans antialiased selection:bg-[#C6A15B] selection:text-[#090909]">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#121212] border-b border-[#C6A15B]/20 py-2 px-4 text-center text-[11px] uppercase tracking-widest text-[#C6A15B] flex items-center justify-center gap-4">
+    <span>✦ Bespoke Luxury Islamic Art & Wall Frames</span>
+    <span class="hidden md:inline">•</span>
+    <span>Hyderabad, India</span>
+    <span class="hidden md:inline">•</span>
+    <a href="https://wa.me/918341886299" class="underline hover:text-[#F5F0E6] transition-colors font-semibold">WhatsApp Orders: +91 8341886299</a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 py-4 px-4 sm:px-8 border-b border-[#C6A15B]/30 bg-[#090909]/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-full overflow-hidden border border-[#C6A15B] p-0.5 bg-[#090909]">
+          <img src="assets/images/logo.jpg" alt="Logo" class="w-full h-full object-cover rounded-full" />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif-luxury text-base md:text-xl font-bold tracking-[0.18em] text-[#F5F0E6] group-hover:text-[#C6A15B] transition-colors">HANAFI</span>
+          <span class="text-[9px] md:text-[10px] tracking-[0.3em] uppercase text-[#C6A15B] font-serif-luxury -mt-1 font-semibold">COLLECTIONS</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-8 text-xs font-serif-luxury uppercase tracking-[0.15em]">
+        <a href="index.html#home" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">Home</a>
+        <a href="shop.html" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">Shop</a>
+        <a href="index.html#collections" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">Collections</a>
+        <a href="about.html" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">About Us</a>
+        <a href="gallery.html" class="text-[#C6A15B] font-bold transition-colors">Gallery</a>
+        <a href="contact.html" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3 sm:gap-4">
+        <button class="cart-drawer-toggle relative w-9 h-9 rounded-full border border-[#C6A15B]/40 hover:border-[#C6A15B] flex items-center justify-center text-[#F5F0E6]">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 bg-[#C6A15B] text-[#090909] font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">0</span>
+        </button>
+
+        <a href="https://wa.me/918341886299" target="_blank" class="hidden sm:inline-flex btn-whatsapp-direct">
+          <span>WhatsApp Order</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="bg-[#121212] border-b border-[#C6A15B]/25 py-14 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="text-xs uppercase font-serif-luxury tracking-[0.25em] text-[#C6A15B]">Visual Exhibition</span>
+      <h1 class="font-serif-luxury text-3xl sm:text-5xl font-bold uppercase mt-2 mb-4 text-[#F5F0E6]">
+        ART THAT INSPIRES THE SOUL
+      </h1>
+      <div class="gold-divider">
+        <span class="gold-divider-symbol">◆</span>
+      </div>
+      <p class="text-xs sm:text-sm text-[#F5F0E6]/75 max-w-xl mx-auto font-light">
+        A photographic celebration of all original framed artworks and workshop craftsmanship from HANAFI COLLECTIONS.
+      </p>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+    
+    <!-- Video Showcase Reel -->
+    <div class="border border-[#C6A15B] bg-[#121212] p-6 sm:p-10 shadow-2xl">
+      <div class="max-w-3xl mx-auto text-center mb-8">
+        <span class="gold-pill-badge mb-2">Exhibition Video</span>
+        <h2 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-[#F5F0E6]">
+          Illuminated Gallery Walkthrough
+        </h2>
+        <p class="text-xs text-[#F5F0E6]/70 mt-2 font-light">
+          Watch our framed calligraphy installed under directional gallery spotlighting.
+        </p>
+      </div>
+
+      <div class="luxury-video-wrapper max-w-4xl mx-auto aspect-video">
+        <video 
+          id="gallery-page-video" 
+          src="assets/videos/wall-video.mp4" 
+          controls 
+          preload="metadata"
+          class="w-full h-full object-cover"
+          poster="assets/images/ayat-al-kursi-royal-gold.jpg"
+        >
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+
+    <!-- Gallery Grid of All Supplied Reference Artworks -->
+    <div>
+      <div class="text-center mb-10">
+        <span class="text-xs uppercase font-serif-luxury tracking-widest text-[#C6A15B]">Original Masterpieces</span>
+        <h3 class="font-serif-luxury text-2xl font-bold uppercase mt-1">High-Resolution Artwork Archive</h3>
+      </div>
+
+      <div id="full-gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="luxury-lightbox-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg hidden items-center justify-center p-4">
+    <button onclick="closeImageLightbox()" class="absolute top-6 right-6 w-11 h-11 rounded-full border border-[#C6A15B] text-[#C6A15B] z-20">✕</button>
+    <div class="max-w-5xl w-full flex flex-col items-center">
+      <img id="lightbox-image" src="" alt="View" class="max-h-[78vh] max-w-full object-contain border border-[#C6A15B]/40 shadow-2xl" />
+      <p id="lightbox-title" class="font-serif-luxury text-sm text-[#F5F0E6] mt-4 text-center"></p>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div id="cart-drawer-backdrop" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden"></div>
+  <aside id="cart-drawer-panel" class="fixed inset-y-0 right-0 z-50 w-full sm:w-[420px] bg-[#090909] border-l border-[#C6A15B] transform translate-x-full transition-transform duration-300 flex flex-col justify-between shadow-2xl">
+    <div class="p-6 border-b border-[#C6A15B]/30 flex items-center justify-between">
+      <h3 class="font-serif-luxury text-base font-bold text-[#F5F0E6] uppercase tracking-wider">Your Shopping Bag</h3>
+      <button id="close-cart-drawer" class="w-8 h-8 rounded-full border border-[#C6A15B] text-[#C6A15B]">✕</button>
+    </div>
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4">
+      <div id="cart-empty-state" class="text-center py-16 hidden">
+        <p class="font-serif-luxury text-sm text-[#F5F0E6] mb-2">Your Shopping Bag is Empty</p>
+      </div>
+      <div id="cart-items-list" class="space-y-3"></div>
+    </div>
+    <div id="cart-drawer-footer" class="p-6 border-t border-[#C6A15B]/30 bg-[#121212]">
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-xs uppercase font-serif-luxury text-[#F5F0E6]/80 tracking-wider">Estimated Subtotal:</span>
+        <span id="cart-total-amount" class="font-serif-luxury text-xl font-bold text-[#C6A15B]">₹000</span>
+      </div>
+      <button onclick="checkoutCartViaWhatsApp()" class="btn-gold-primary w-full text-xs py-3.5 justify-center tracking-widest">
+        <span>Proceed via WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="bg-[#090909] border-t-2 border-[#C6A15B] py-12 text-[#F5F0E6]">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <img src="assets/images/logo.jpg" alt="Logo" class="w-10 h-10 rounded-full border border-[#C6A15B]" />
+        <span class="font-serif-luxury text-lg font-bold tracking-wider">HANAFI COLLECTIONS</span>
+      </div>
+      <p class="text-xs text-[#F5F0E6]/70 mb-4">Hyderabad, India • WhatsApp: +91 8341886299 • Owner: Rizwan Raza Qadri</p>
+      <p class="text-[11px] text-[#C6A15B]">© 2026 HANAFI COLLECTIONS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const grid = document.getElementById("full-gallery-grid");
+      if (!grid || !window.PRODUCTS_DATA) return;
+
+      const galleryList = [
+        ...window.PRODUCTS_DATA.filter(p => p.id !== "custom-bespoke-curation")
+      ];
+
+      grid.innerHTML = galleryList.map(item => `
+        <div class="luxury-card group p-4 border border-[#C6A15B]/30 hover:border-[#C6A15B]">
+          <div class="relative h-72 w-full overflow-hidden mb-4 bg-black flex items-center justify-center p-2">
+            <img 
+              src="${item.image}" 
+              alt="${item.title}" 
+              class="w-full h-full object-contain cursor-pointer transition-transform duration-700 group-hover:scale-105"
+              onclick="openImageLightbox('${item.image}', '${item.title}')"
+            />
+          </div>
+          <div class="flex items-center justify-between text-xs text-[#C6A15B] font-serif-luxury uppercase mb-1">
+            <span>${item.script || 'Sacred Collection'}</span>
+            <span>${item.dimensions}</span>
+          </div>
+          <h4 class="font-serif-luxury text-base text-[#F5F0E6] mb-3">${item.title}</h4>
+          <div class="flex items-center justify-between pt-2 border-t border-[#C6A15B]/20">
+            <button onclick="openImageLightbox('${item.image}', '${item.title}')" class="text-xs text-[#C6A15B] hover:text-[#F5F0E6] underline">
+              Enlarge View ⤢
+            </button>
+            <a 
+              href="https://wa.me/918341886299?text=${encodeURIComponent('Assalamu Alaikum Rizwan Bhai, I am interested in framing: ' + item.title)}"
+              target="_blank"
+              class="text-xs text-[#C6A15B] hover:text-[#F5F0E6] flex items-center gap-1"
+            >
+              <span>Order Frame</span> →
+            </a>
+          </div>
+        </div>
+      `).join("");
+    });
+  </script>
+</body>
+</html>

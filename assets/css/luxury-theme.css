@@ -1,0 +1,379 @@
+/* ==========================================================================
+   HANAFI COLLECTIONS — LUXURY ISLAMIC DECOR THEME
+   Strict Brand Palette:
+   1. Luxury Black — #090909
+   2. Royal Gold   — #C6A15B
+   3. Elegant Ivory — #F5F0E6
+   4. Rich Brown   — #78614A
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --color-black: #090909;
+  --color-gold: #C6A15B;
+  --color-ivory: #F5F0E6;
+  --color-brown: #78614A;
+
+  /* Opacity variants strictly within the 4 colors */
+  --color-black-soft: #121212;
+  --color-black-card: #141414;
+  --color-black-elevated: #1a1a1a;
+  
+  --gold-glow: rgba(198, 161, 91, 0.22);
+  --gold-glow-intense: rgba(198, 161, 91, 0.45);
+  --gold-border: rgba(198, 161, 91, 0.35);
+  --gold-border-subtle: rgba(198, 161, 91, 0.18);
+  --gold-border-rich: rgba(198, 161, 91, 0.7);
+
+  --font-serif: 'Cinzel', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-arabic: 'Amiri', serif;
+}
+
+/* Base Reset & Styling */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-black);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-black);
+  color: var(--color-ivory);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brown);
+  border-radius: 4px;
+  border: 1px solid var(--color-gold);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+/* Typography Utility Classes */
+.font-serif-luxury {
+  font-family: var(--font-serif);
+  letter-spacing: 0.04em;
+}
+
+.font-sans-luxury {
+  font-family: var(--font-sans);
+}
+
+.font-arabic-art {
+  font-family: var(--font-arabic);
+}
+
+/* Luxury Gold Text Gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F5F0E6 0%, #C6A15B 50%, #78614A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-pure {
+  color: var(--color-gold);
+}
+
+.text-ivory-pure {
+  color: var(--color-ivory);
+}
+
+.text-brown-pure {
+  color: var(--color-brown);
+}
+
+/* Subtle Geometric Pattern Background */
+.bg-islamic-pattern {
+  background-color: var(--color-black);
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(198, 161, 91, 0.05) 0%, transparent 60%),
+    linear-gradient(rgba(198, 161, 91, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(198, 161, 91, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 48px 48px, 48px 48px;
+}
+
+.bg-arch-pattern {
+  background-color: var(--color-black-soft);
+  background-image: radial-gradient(circle at center, rgba(198, 161, 91, 0.08) 0%, transparent 70%);
+}
+
+/* Luxury Borders & Frames */
+.border-gold-subtle {
+  border-color: var(--gold-border-subtle);
+}
+
+.border-gold-classic {
+  border-color: var(--color-gold);
+}
+
+.border-gold-rich {
+  border-color: var(--gold-border-rich);
+}
+
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem auto;
+  max-width: 280px;
+}
+.gold-divider::before,
+.gold-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+.gold-divider-symbol {
+  color: var(--color-gold);
+  font-size: 1rem;
+  transform: rotate(45deg);
+}
+
+/* Luxury Buttons */
+.btn-gold-primary {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  border: 1px solid var(--color-gold);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(198, 161, 91, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-gold-primary:hover {
+  background-color: var(--color-ivory);
+  border-color: var(--color-ivory);
+  color: var(--color-black);
+  box-shadow: 0 6px 25px rgba(198, 161, 91, 0.4);
+  transform: translateY(-2px);
+}
+.btn-gold-primary::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(30deg);
+  transition: none;
+}
+.btn-gold-primary:hover::after {
+  left: 140%;
+  transition: all 0.75s ease-in-out;
+}
+
+.btn-luxury-outline {
+  background-color: transparent;
+  color: var(--color-ivory);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  border: 1px solid var(--color-gold);
+  transition: all 0.35s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-luxury-outline:hover {
+  background-color: rgba(198, 161, 91, 0.12);
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 20px rgba(198, 161, 91, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp-direct {
+  background-color: #121212;
+  color: var(--color-ivory);
+  border: 1px solid var(--color-gold);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.btn-whatsapp-direct:hover {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  border-color: var(--color-gold);
+  box-shadow: 0 4px 15px rgba(198, 161, 91, 0.3);
+}
+
+/* Luxury Product Card */
+.luxury-card {
+  background: var(--color-black-card);
+  border: 1px solid var(--gold-border-subtle);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+.luxury-card:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(198, 161, 91, 0.2);
+}
+.luxury-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.luxury-card:hover::before {
+  opacity: 1;
+}
+
+/* Image Presentation (Strictly preserves proportions and details) */
+.product-frame-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #050505;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.luxury-card:hover .product-frame-image {
+  transform: scale(1.03);
+}
+
+/* Modal and Drawer Overlays */
+.luxury-backdrop {
+  background-color: rgba(9, 9, 9, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.luxury-modal-content {
+  background-color: var(--color-black-card);
+  border: 1px solid var(--color-gold);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9), 0 0 35px rgba(198, 161, 91, 0.3);
+}
+
+/* Badge */
+.gold-pill-badge {
+  background: rgba(198, 161, 91, 0.12);
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.72rem;
+  font-family: var(--font-serif);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* Subtle Ambient Glow */
+.gold-spotlight {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(198, 161, 91, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+/* Video Frame Presentation */
+.luxury-video-wrapper {
+  position: relative;
+  border: 1px solid var(--color-gold);
+  background-color: #000;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(198, 161, 91, 0.2);
+  overflow: hidden;
+}
+
+/* Input Fields */
+.luxury-input {
+  background-color: #121212;
+  border: 1px solid var(--gold-border-subtle);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  padding: 0.85rem 1.15rem;
+  width: 100%;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.luxury-input:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 12px rgba(198, 161, 91, 0.25);
+  background-color: #161616;
+}
+.luxury-input::placeholder {
+  color: rgba(245, 240, 230, 0.4);
+}
+
+/* Animations */
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float-subtle {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+@keyframes pulseGold {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-pulse-gold {
+  animation: pulseGold 3s infinite ease-in-out;
+}

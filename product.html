@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masterpiece Artwork Details | HANAFI COLLECTIONS</title>
+  <meta name="description" content="Detailed craftsmanship, dimensions, and specifications for luxury Islamic wall art by HANAFI COLLECTIONS." />
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlack: '#090909',
+            brandGold: '#C6A15B',
+            brandIvory: '#F5F0E6',
+            brandBrown: '#78614A',
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'Georgia', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+            arabic: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/luxury-theme.css" />
+</head>
+<body class="bg-[#090909] text-[#F5F0E6] font-sans antialiased selection:bg-[#C6A15B] selection:text-[#090909]">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#121212] border-b border-[#C6A15B]/20 py-2 px-4 text-center text-[11px] uppercase tracking-widest text-[#C6A15B] flex items-center justify-center gap-4">
+    <span>✦ Bespoke Luxury Islamic Art & Wall Frames</span>
+    <span class="hidden md:inline">•</span>
+    <span>Hyderabad, India</span>
+    <span class="hidden md:inline">•</span>
+    <a href="https://wa.me/918341886299" class="underline hover:text-[#F5F0E6] transition-colors font-semibold">WhatsApp Orders: +91 8341886299</a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 py-4 px-4 sm:px-8 border-b border-[#C6A15B]/30 bg-[#090909]/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-full overflow-hidden border border-[#C6A15B] p-0.5 bg-[#090909]">
+          <img src="assets/images/logo.jpg" alt="Logo" class="w-full h-full object-cover rounded-full" />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif-luxury text-base md:text-xl font-bold tracking-[0.18em] text-[#F5F0E6] group-hover:text-[#C6A15B] transition-colors">HANAFI</span>
+          <span class="text-[9px] md:text-[10px] tracking-[0.3em] uppercase text-[#C6A15B] font-serif-luxury -mt-1 font-semibold">COLLECTIONS</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-8 text-xs font-serif-luxury uppercase tracking-[0.15em]">
+        <a href="index.html#home" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">Home</a>
+        <a href="shop.html" class="text-[#C6A15B] font-bold transition-colors">Shop</a>
+        <a href="index.html#collections" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">Collections</a>
+        <a href="about.html" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">About Us</a>
+        <a href="gallery.html" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">Gallery</a>
+        <a href="contact.html" class="text-[#F5F0E6] hover:text-[#C6A15B] transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3 sm:gap-4">
+        <button class="cart-drawer-toggle relative w-9 h-9 rounded-full border border-[#C6A15B]/40 hover:border-[#C6A15B] flex items-center justify-center text-[#F5F0E6]">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 bg-[#C6A15B] text-[#090909] font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">0</span>
+        </button>
+
+        <a href="https://wa.me/918341886299" target="_blank" class="hidden sm:inline-flex btn-whatsapp-direct">
+          <span>WhatsApp Order</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Product Details Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    
+    <!-- Breadcrumb -->
+    <div class="flex items-center gap-2 text-xs text-[#F5F0E6]/60 mb-8 font-serif-luxury uppercase tracking-wider">
+      <a href="index.html" class="hover:text-[#C6A15B]">Home</a>
+      <span>/</span>
+      <a href="shop.html" class="hover:text-[#C6A15B]">Shop</a>
+      <span>/</span>
+      <span id="breadcrumb-title" class="text-[#C6A15B]">Product Details</span>
+    </div>
+
+    <!-- Product Details Content -->
+    <div id="product-detail-container" class="space-y-16">
+      <!-- Rendered by JS -->
+    </div>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="luxury-lightbox-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg hidden items-center justify-center p-4">
+    <button onclick="closeImageLightbox()" class="absolute top-6 right-6 w-11 h-11 rounded-full border border-[#C6A15B] text-[#C6A15B] z-20">✕</button>
+    <div class="max-w-5xl w-full flex flex-col items-center">
+      <img id="lightbox-image" src="" alt="View" class="max-h-[78vh] max-w-full object-contain border border-[#C6A15B]/40 shadow-2xl" />
+      <p id="lightbox-title" class="font-serif-luxury text-sm text-[#F5F0E6] mt-4 text-center"></p>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div id="cart-drawer-backdrop" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden"></div>
+  <aside id="cart-drawer-panel" class="fixed inset-y-0 right-0 z-50 w-full sm:w-[420px] bg-[#090909] border-l border-[#C6A15B] transform translate-x-full transition-transform duration-300 flex flex-col justify-between shadow-2xl">
+    <div class="p-6 border-b border-[#C6A15B]/30 flex items-center justify-between">
+      <h3 class="font-serif-luxury text-base font-bold text-[#F5F0E6] uppercase tracking-wider">Your Shopping Bag</h3>
+      <button id="close-cart-drawer" class="w-8 h-8 rounded-full border border-[#C6A15B] text-[#C6A15B]">✕</button>
+    </div>
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4">
+      <div id="cart-empty-state" class="text-center py-16 hidden">
+        <p class="font-serif-luxury text-sm text-[#F5F0E6] mb-2">Your Shopping Bag is Empty</p>
+      </div>
+      <div id="cart-items-list" class="space-y-3"></div>
+    </div>
+    <div id="cart-drawer-footer" class="p-6 border-t border-[#C6A15B]/30 bg-[#121212]">
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-xs uppercase font-serif-luxury text-[#F5F0E6]/80 tracking-wider">Estimated Subtotal:</span>
+        <span id="cart-total-amount" class="font-serif-luxury text-xl font-bold text-[#C6A15B]">₹000</span>
+      </div>
+      <button onclick="checkoutCartViaWhatsApp()" class="btn-gold-primary w-full text-xs py-3.5 justify-center tracking-widest">
+        <span>Proceed via WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="bg-[#090909] border-t-2 border-[#C6A15B] py-12 text-[#F5F0E6] mt-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <img src="assets/images/logo.jpg" alt="Logo" class="w-10 h-10 rounded-full border border-[#C6A15B]" />
+        <span class="font-serif-luxury text-lg font-bold tracking-wider">HANAFI COLLECTIONS</span>
+      </div>
+      <p class="text-xs text-[#F5F0E6]/70 mb-4">Hyderabad, India • WhatsApp: +91 8341886299 • Owner: Rizwan Raza Qadri</p>
+      <p class="text-[11px] text-[#C6A15B]">© 2026 HANAFI COLLECTIONS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const productId = params.get("id") || "ayat-al-kursi-royal-gold";
+      const product = (window.PRODUCTS_DATA || []).find(p => p.id === productId) || window.PRODUCTS_DATA[0];
+
+      if (!product) return;
+
+      document.title = `${product.title} | HANAFI COLLECTIONS`;
+      const bc = document.getElementById("breadcrumb-title");
+      if (bc) bc.textContent = product.title;
+
+      const container = document.getElementById("product-detail-container");
+      if (!container) return;
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Product Image Frame (7 cols) -->
+          <div class="lg:col-span-7 border-2 border-[#C6A15B] bg-[#050505] p-4 sm:p-8 relative shadow-2xl">
+            <div class="relative max-h-[580px] flex items-center justify-center overflow-hidden">
+              <img 
+                id="main-product-img"
+                src="${product.image}" 
+                alt="${product.title}" 
+                class="max-h-[540px] w-full object-contain cursor-zoom-in transition-transform duration-500 hover:scale-105"
+                onclick="openImageLightbox('${product.image}', '${product.title}')"
+              />
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs text-[#C6A15B] pt-4 border-t border-[#C6A15B]/20">
+              <span>Standard Dimension: ${product.dimensions}</span>
+              <button onclick="openImageLightbox('${product.image}', '${product.title}')" class="underline hover:text-[#F5F0E6]">
+                Click for Fullscreen Inspection ⤢
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Specifications & Buy Box (5 cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            <div>
+              <span class="gold-pill-badge mb-2">${product.collectionName}</span>
+              <h1 class="font-serif-luxury text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F5F0E6] mb-3">
+                ${product.title}
+              </h1>
+              <p class="text-xs uppercase tracking-widest text-[#C6A15B] font-serif-luxury mb-4">
+                Arabic Script: ${product.script}
+              </p>
+
+              <div class="font-serif-luxury text-3xl font-bold text-[#C6A15B] mb-1">
+                ${product.priceDisplay}
+              </div>
+              <p class="text-[11px] text-[#F5F0E6]/50 uppercase tracking-wider mb-6">
+                ${product.priceNote}
+              </p>
+            </div>
+
+            <p class="text-sm text-[#F5F0E6]/85 leading-relaxed font-light">
+              ${product.fullDescription}
+            </p>
+
+            ${product.translation ? `
+              <div class="bg-[#121212] border-l-2 border-[#C6A15B] p-4">
+                <span class="text-[10px] uppercase font-serif-luxury tracking-widest text-[#C6A15B] block mb-1">Sacred Translation</span>
+                <p class="text-xs text-[#F5F0E6]/90 italic">"${product.translation}"</p>
+              </div>
+            ` : ''}
+
+            <!-- Specifications Grid -->
+            <div class="border border-[#C6A15B]/20 bg-[#121212] p-4 space-y-2 text-xs">
+              <div class="flex justify-between py-1 border-b border-[#C6A15B]/10">
+                <span class="text-[#F5F0E6]/60">Available Sizes</span>
+                <span class="text-[#F5F0E6] font-medium">${product.dimensions}</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-[#C6A15B]/10">
+                <span class="text-[#F5F0E6]/60">Frame Materials</span>
+                <span class="text-[#F5F0E6] font-medium">${product.materials}</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-[#C6A15B]/10">
+                <span class="text-[#F5F0E6]/60">Artisan Finish</span>
+                <span class="text-[#F5F0E6] font-medium">${product.finish}</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-[#F5F0E6]/60">Origin & Crafting</span>
+                <span class="text-[#F5F0E6] font-medium">Hyderabad, India</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="space-y-3 pt-4">
+              <button 
+                onclick="window.hanafiCart.addItem('${product.id}')"
+                class="btn-gold-primary w-full text-xs py-3.5 justify-center tracking-widest"
+              >
+                Add to Shopping Bag
+              </button>
+              
+              <a 
+                href="https://wa.me/918341886299?text=${encodeURIComponent('Assalamu Alaikum Rizwan Bhai, I want to order ' + product.title + ' (' + product.priceDisplay + '). Please share dimensions and payment options.')}"
+                target="_blank"
+                class="btn-whatsapp-direct w-full justify-center text-xs py-3.5 bg-[#090909] text-[#C6A15B] hover:bg-[#C6A15B] hover:text-[#090909]"
+              >
+                <svg class="w-4 h-4 fill-current mr-2" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Direct WhatsApp Order</span>
+              </a>
+            </div>
+
+            <p class="text-[11px] text-center text-[#F5F0E6]/50">
+              * Sizing customizable upon consultation. Custom quotes delivered within 2 hours on WhatsApp.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Related Pieces -->
+        <div class="pt-16 border-t border-[#C6A15B]/25">
+          <div class="text-center mb-10">
+            <span class="text-xs uppercase font-serif-luxury tracking-widest text-[#C6A15B]">Complementary Artworks</span>
+            <h3 class="font-serif-luxury text-2xl font-bold uppercase mt-1">More from HANAFI COLLECTIONS</h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            ${window.PRODUCTS_DATA.filter(p => p.id !== product.id).slice(0, 3).map(rel => `
+              <div class="luxury-card p-4 border border-[#C6A15B]/25">
+                <div class="h-56 bg-black flex items-center justify-center p-2 mb-3">
+                  <img src="${rel.image}" alt="${rel.title}" class="max-h-full max-w-full object-contain cursor-pointer" onclick="window.location.href='product.html?id=${rel.id}'" />
+                </div>
+                <h4 class="font-serif-luxury text-sm font-semibold text-[#F5F0E6] mb-1">${rel.title}</h4>
+                <p class="text-xs text-[#C6A15B] font-bold mb-3">${rel.priceDisplay}</p>
+                <a href="product.html?id=${rel.id}" class="btn-luxury-outline text-xs w-full text-center py-2">
+                  View Piece
+                </a>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>
